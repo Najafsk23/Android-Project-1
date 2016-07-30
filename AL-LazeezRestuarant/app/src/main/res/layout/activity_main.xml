@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context="com.example.najafsk23.al_lazeezrestuarant.MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/allazeez"
+        android:adjustViewBounds="true"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageView" />
+</LinearLayout>
+
+    </ScrollView>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asalam Alaikum! Welcome to the best resturant in karachi. We provide one of the best meals in karachi. Our food quality is beyond your imagination. Thankyou for coming!"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="25dp"
+        android:textColor="@android:color/white"
+        android:textStyle="italic"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location:Street-26,Block-B,Laree-adha,Karachi
+ Contact:0900-78601
+ Timings:24/7"
+        android:textSize="25dp"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="italic"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Want to book reservations?"
+    android:textSize="20dp"
+        android:onClick="Reservation"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quit?"
+        android:textSize="20dp"
+        android:onClick="quitApp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
